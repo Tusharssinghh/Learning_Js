@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login and Logout Example</title>
+</head>
+<body>
+    
+    
+    <div id="login-container">
+        <button type="button" id="myButton" style="background-color: #4CAF50; color: white; padding: 10px 20px; font-size: 16px;">Sign Up</button>
+
+        <h2>Login</h2>
+        
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()" style = "background-color: #4CAF50;"  >Login</button>
+        </form>
+    </div>
+
+    <div id="welcome-container" class="hidden">
+        <h2>Welcome, <span id="user-display"></span>!</h2>
+        <button type="button" onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
